@@ -62,7 +62,7 @@ public class ChessGameService {
         Game game = getLatestGame();
         game.move(source, destination);
         chessGameDao.addChessGame(game.getBoard().parseBoard(),
-                game.getCurrentTeam() == TeamType.WHITE ? BLACK_TURN : WHITE_TURN);
+                game.getCurrentTeam() == TeamType.WHITE ? WHITE_TURN : BLACK_TURN);
 
         return createLatestGame();
     }
