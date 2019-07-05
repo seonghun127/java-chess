@@ -25,7 +25,7 @@ public class ChessGameService {
     }
 
     public static ChessGameService getInstance() {
-        return ChessGameService.ChessGameServiceHolder.CHESS_GAME_SERVICE;
+        return ChessGameServiceHolder.CHESS_GAME_SERVICE;
     }
 
     public ChessGameDto.GameLoading createNewGame() {
